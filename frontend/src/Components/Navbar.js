@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Navbar(){
     return <div className="px-10 pt-8 ">
@@ -8,11 +9,21 @@ export default function Navbar(){
                 <div className="w-10 cursor-pointer">GALLERY</div>
                 <div className="w-10 cursor-pointer">CONTACT</div>
             </div>
-            <div className="w-48">
-                <img src={require('../assets/images/logo-red-dot.png')} draggable="false" alt="img" />
-            </div>
+            <Parallax
+                endScroll={300}
+                startScroll={0}
+                translateY={[
+                  0,
+                  700
+                ]}
+            >
+                <div className="w-48">
+                    <img src={require('../assets/images/logo-red-dot.png')} draggable="false" alt="img" />
+                </div>
+            </Parallax>
         </div>
-        <div className="bg-slate-900 h-[2px] opacity-25"></div>
+        {/* <div className="bg-slate-900 h-[2px] opacity-25"></div> */}
     </div>
 }
+    
 
