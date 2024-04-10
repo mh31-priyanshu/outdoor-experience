@@ -18,13 +18,14 @@ export default function UpcomingTreks(){
         <Parallax
             speed={5}
             easing="easeInOutCirc"
+            opacity={[0,5]}
         >
             <div className="flex justify-around mt-24">
                 <Parallax
                     speed={10}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white rounded-xl w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(255,_130,_0,_0.8)]">
-                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-xl px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
+                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/visapur.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
                             <h3 class="z-10 mt-3 text-3xl font-bold text-white">Visapur</h3>
@@ -36,8 +37,8 @@ export default function UpcomingTreks(){
                 <Parallax
                     speed={-13}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white rounded-xl w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(255,_130,_0,_0.8)] ">
-                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-xl px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
+                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)] ">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/lohagad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
                             <h3 class="z-10 mt-3 text-3xl font-bold text-white">Lohagad</h3>
@@ -49,8 +50,8 @@ export default function UpcomingTreks(){
                 <Parallax
                     speed={15}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white rounded-xl w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(255,_130,_0,_0.8)]">
-                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-xl px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
+                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/RajGad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
                             <h3 class="z-10 mt-3 text-3xl font-bold text-white">Rajgad</h3>
@@ -63,8 +64,8 @@ export default function UpcomingTreks(){
                 <Parallax
                     speed={-10}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white rounded-xl w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(255,_130,_0,_0.8)]">
-                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-xl px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
+                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/sinhagad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
                             <h3 class="z-10 mt-3 text-3xl font-bold text-white">Sinhagad</h3>
@@ -76,8 +77,8 @@ export default function UpcomingTreks(){
                 <Parallax
                     speed={17}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white rounded-xl w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(255,_130,_0,_0.8)]">
-                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-xl px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
+                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/harishchandragad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
                             <h3 class="z-10 mt-3 text-3xl font-bold text-white">Harish</h3>

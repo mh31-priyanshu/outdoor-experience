@@ -6,7 +6,8 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import UpcomingTreks from "../Components/UpcomingTreks"
 import CloudCard from '../Components/CloudCard';
-
+import Wildlife from '../Components/Wildlife';
+import Footer from '../Components/Footer';
 
 const Home = () => {
     return <div className="relative select-none scroll-smooth">
@@ -55,6 +56,10 @@ const Home = () => {
 
                 </div>
             </div>
+            <Wildlife></Wildlife>
+            <div className='h-[20px] w-full bg-black text-white'></div>
+            <Footer></Footer>
+            
         </div>
         
     </div>
