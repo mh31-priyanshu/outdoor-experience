@@ -13,8 +13,8 @@ export default function CloudCard(){
             </Parallax>
         </div>
         <div className="bg-white w-[500px] p-10">
-            <div className="font-LeagueSpartan text-[40px]">Lorem Ipsum</div>
-            <div className="font-Quicksand">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <div className="font-LeagueSpartan text-[40px]">Explore the beauty</div>
+            <div className="font-Quicksand">Mountains stand as silent sentinels, their rugged peaks tracing the horizon with timeless grace, offering vistas that stir the soul and awaken a primal longing for adventure amidst nature's grandeur.</div>
         </div>
     </div>
 }

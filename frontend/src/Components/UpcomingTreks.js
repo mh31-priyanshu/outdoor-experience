@@ -1,8 +1,11 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
+import { useNavigate } from "react-router-dom";
 import UpcomingTrekCard from "./UpcomingTrekCard";
+import { Link } from "react-router-dom";
 
 export default function UpcomingTreks(){
+    const navigate = useNavigate();
     return <div>
         <div className="w-1 h-20"></div>
         <Parallax
@@ -21,10 +24,11 @@ export default function UpcomingTreks(){
             opacity={[0,5]}
         >
             <div className="flex justify-around mt-24">
+                <Link to="/visapur">
                 <Parallax
                     speed={10}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                    <div className="group cursor-pointer transition ease-out  border-white w-[200px]  hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
                         <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/visapur.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
@@ -33,11 +37,13 @@ export default function UpcomingTreks(){
                         </article>
                     </div>
                 </Parallax>
+                </Link>
 
+                <Link to="/lohagad">
                 <Parallax
                     speed={-13}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)] ">
+                    <div className="group cursor-pointer transition ease-out  border-white w-[200px]  hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)] ">
                         <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/lohagad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
@@ -46,11 +52,13 @@ export default function UpcomingTreks(){
                         </article>
                     </div>
                 </Parallax>
+                </Link>
 
+                <Link to="/rajgad">
                 <Parallax
                     speed={15}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                    <div className="group cursor-pointer transition ease-out  border-white w-[200px]  hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
                         <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/RajGad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
@@ -59,12 +67,16 @@ export default function UpcomingTreks(){
                         </article>
                     </div>
                 </Parallax>
+                </Link>
                 
 
+                <Link to="/sinhagad">
                 <Parallax
                     speed={-10}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                    <div className="group cursor-pointer transition ease-out  border-white w-[200px]  hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]" onClick={
+                        
+                        console.log("waf")}>
                         <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/sinhagad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
@@ -73,11 +85,13 @@ export default function UpcomingTreks(){
                         </article>
                     </div>
                 </Parallax>
+                </Link>
 
+                <Link to="/harishchandragad">
                 <Parallax
                     speed={17}
                 >
-                    <div className="group cursor-pointer transition ease-out hover:border-x-2 hover:border-2 border-white w-[200px] hover:w-[250px] hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
+                    <div className="group cursor-pointer transition ease-out  border-white w-[200px]  hover:shadow-[0_20px_70px_rgba(0,_126,_1,_0.8)]">
                         <article class="relative isolate flex flex-col justify-end overflow-hidden px-14 pb-8 pt-80 max-w-sm mx-auto font-LeagueSpartan">
                             <img src={require("../assets/treks/harishchandragad.jpg")}  class="absolute inset-0 h-full w-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-duration(300)" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
@@ -86,6 +100,7 @@ export default function UpcomingTreks(){
                         </article>
                     </div>
                 </Parallax>
+                </Link>
 
             </div>
             

@@ -9,8 +9,8 @@ export default function Wildlife(){
             <img src={require('../assets/images/dark-green.jpg')} alt="" />
         </Parallax>
         <div className='absolute inset-x-0  top-0 w-full h-3/4 bg-gradient-to-b from-black to-transparent z-10'></div>
-        <div className='absolute inset-x-0 bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent z-30'></div>
-        <div className='absolute bottom-0 right-0 z-10 w-[650px] grayscale '>
+        <div className='absolute inset-x-0 bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent z-50'></div>
+        <div className='absolute bottom-0 right-0 z-40 w-[650px] grayscale '>
             <img src={require('../assets/images/jaguar.png')} />
         </div>
         <div className=" absolute z-20 left-28 top-36" >
@@ -20,7 +20,7 @@ export default function Wildlife(){
                     <div className="font-LeagueSpartan text-[200px] font-bold -mt-16">WILDLIFE</div>
                 </div>
                 <div className="text-white ml-4 w-[600px] -mt-16">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    In Maharashtra's Western Ghats, verdant wonders unfold, where each trek unveils a tapestry of life, from misty peaks to lush valleys below, a symphony of biodiversity beckons explorers to immerse in nature's grandeur.
                 </div>
             </Parallax>
             

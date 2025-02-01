@@ -1,18 +1,27 @@
+const express = require("express");
+const cors = require("cors");
 const dotenv = require("dotenv");
+const paymentRoute = require("./routes/payments");
+const emailRoute = require("./routes/sendmail")
+//Initialize App
+const app = express();
+
+
+// Setting up enivronment variables
 dotenv.config();
 
+//Middlewares
+app.use(express.json());
+app.use(cors());
 
-const express = require('express')
+//Routing
+app.use("/api/payment/",paymentRoute);
+app.use("/api/email/", emailRoute);
 
-const app = express()
+app.get("/", (req, res)=>{
+    res.send("Temp");
+});
 
-//routes
-app.get('/',(req, res)=>{
-    res.json({msgs:"Welcome to root page"})
-})
-
-
-//listener to port
-app.listen(process.env.PORT, ()=>{
-    console.log("created")
-})
+//Listening App
+const port = process.env.PORT || 8080;
+app.listen(port,()=> console.log(`Listening port ${port}`));
